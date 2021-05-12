@@ -8,84 +8,90 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/bee1"
-        android:layout_width="61dp"
+        android:id="@+id/bee4"
+        android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginEnd="1dp"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear3"
         app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="295dp"
         tools:layout_editor_absoluteY="408dp" />
 
     <ImageButton
         android:id="@+id/bee5"
-        android:layout_width="61dp"
+        android:layout_width="60dp"
         android:layout_height="64dp"
         android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear8"
         app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="280dp" />
+        tools:layout_editor_absoluteY="344dp" />
 
     <ImageButton
-        android:id="@+id/honey1"
+        android:id="@+id/bear4"
+        android:layout_width="59dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear5"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <ImageButton
+        android:id="@+id/bee6"
         android:layout_width="61dp"
         android:layout_height="64dp"
+        android:layout_marginStart="55dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/honey"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bee"
+        tools:layout_editor_absoluteY="344dp" />
 
     <ImageButton
-        android:id="@+id/bear7"
+        android:id="@+id/bear11"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginStart="55dp"
         android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="296dp"
         tools:layout_editor_absoluteY="280dp" />
-
-    <ImageButton
-        android:id="@+id/bear9"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="296dp"
-        tools:layout_editor_absoluteY="216dp" />
 
     <ImageButton
         android:id="@+id/bee2"
         android:layout_width="61dp"
         android:layout_height="64dp"
         android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee3"
         app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="408dp" />
+        tools:layout_editor_absoluteY="472dp" />
 
     <ImageButton
-        android:id="@+id/bear10"
+        android:id="@+id/bear12"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginEnd="55dp"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="115dp"
         tools:layout_editor_absoluteY="216dp" />
 
     <ImageButton
-        android:id="@+id/bee7"
+        android:id="@+id/bear15"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="55dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <ImageButton
+        android:id="@+id/honey1"
         android:layout_width="61dp"
         android:layout_height="64dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="216dp" />
-
-    <ImageButton
-        android:id="@+id/bear3"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="295dp"
+        app:layout_constraintEnd_toStartOf="@+id/bear7"
+        app:srcCompat="@drawable/honey"
         tools:layout_editor_absoluteY="344dp" />
 
     <ImageButton
@@ -93,152 +99,182 @@
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee6"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <ImageButton
+        android:id="@+id/bear2"
+        android:layout_width="60dp"
+        android:layout_height="62dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee2"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <ImageButton
+        android:id="@+id/bear7"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="55dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <ImageButton
+        android:id="@+id/bee7"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear9"
+        app:srcCompat="@drawable/bee"
         tools:layout_editor_absoluteY="280dp" />
 
     <ImageButton
         android:id="@+id/bear13"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginTop="52dp"
         android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/timerText"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteX="236dp" />
 
     <ImageButton
-        android:id="@+id/bee6"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="280dp" />
-
-    <ImageButton
-        android:id="@+id/bear6"
+        android:id="@+id/bear5"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginStart="1dp"
         android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear6"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="344dp" />
+        tools:layout_editor_absoluteY="408dp" />
+
+    <ImageButton
+        android:id="@+id/bee1"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="52dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bee"
+        tools:layout_editor_absoluteY="473dp" />
 
     <ImageButton
         android:id="@+id/honey2"
         android:layout_width="61dp"
         android:layout_height="64dp"
         android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/bee8"
         app:srcCompat="@drawable/honey"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="216dp" />
-
-    <ImageButton
-        android:id="@+id/bear11"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="216dp" />
-
-    <ImageButton
-        android:id="@+id/bee3"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="408dp" />
-
-    <ImageButton
-        android:id="@+id/bear12"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="296dp"
-        tools:layout_editor_absoluteY="152dp" />
-
-    <ImageButton
-        android:id="@+id/bear15"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="152dp" />
-
-    <ImageButton
-        android:id="@+id/bear4"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="344dp" />
+        tools:layout_editor_absoluteX="175dp" />
 
     <ImageButton
         android:id="@+id/bear1"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="408dp" />
-
-    <ImageButton
-        android:id="@+id/bee8"
         android:layout_width="61dp"
-        android:layout_height="64dp"
+        android:layout_height="61dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="152dp" />
+        app:layout_constraintStart_toEndOf="@+id/bear2"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="473dp" />
 
     <ImageButton
         android:id="@+id/bear14"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginTop="52dp"
         android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/timerText"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteX="115dp" />
 
     <ImageButton
-        android:id="@+id/bee4"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bee"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="344dp" />
-
-    <ImageButton
-        android:id="@+id/bear2"
+        android:id="@+id/bear6"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginStart="54dp"
         android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="175dp"
         tools:layout_editor_absoluteY="408dp" />
 
     <ImageButton
-        android:id="@+id/bear5"
+        android:id="@+id/bee3"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="54dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bee"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <ImageButton
+        android:id="@+id/bear9"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginEnd="55dp"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="344dp" />
+        tools:layout_editor_absoluteY="280dp" />
+
+    <ImageButton
+        android:id="@+id/bee8"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="52dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/timerText"
+        app:srcCompat="@drawable/bee"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <ImageButton
+        android:id="@+id/bear10"
+        android:layout_width="61dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear11"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <ImageButton
+        android:id="@+id/bear3"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="54dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bear"
+        tools:layout_editor_absoluteY="408dp" />
 
     <TextView
         android:id="@+id/numberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="183dp"
+        android:layout_marginEnd="189dp"
         android:text="0"
         android:textSize="70sp"
-        tools:layout_editor_absoluteX="186dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="586dp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="148dp"
+        android:text="0:30"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

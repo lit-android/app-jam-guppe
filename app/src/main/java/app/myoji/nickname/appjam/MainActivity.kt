@@ -52,6 +52,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        var bee = listOf( bee1, bee2, bee3, bee4, bee5, bee6, bee7, bee8)
+        for (num in 1..8) {
+            bee[num].setOnClickListener {
+
+            }
+        }
+
+        var honey = listOf( honey1, honey2)
+        for (num in 1..2) {
+            honey[num].setOnClickListener {
+
+            }
+        }
 
     }
 
