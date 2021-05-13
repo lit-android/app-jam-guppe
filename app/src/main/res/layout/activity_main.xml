@@ -11,7 +11,7 @@
         android:id="@+id/numberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="32dp"
         android:text="0"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,12 +49,13 @@
         android:id="@+id/bear2"
         android:layout_width="60dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="50dp"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/numberTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bear"
-        tools:layout_editor_absoluteY="462dp" />
+        app:srcCompat="@drawable/bear" />
 
     <ImageButton
         android:id="@+id/bee4"
@@ -254,16 +255,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
         android:text="0:30"
         android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/bee8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
