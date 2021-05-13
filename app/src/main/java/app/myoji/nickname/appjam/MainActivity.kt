@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         var honey2: ImageButton = findViewById(R.id.honey2)
 
         var bear = listOf(bear1, bear2, bear3, bear4, bear5, bear6, bear7, bear8, bear9, bear10, bear11, bear12, bear13, bear14, bear15)
-        for (num in 1..15) {
+        for (num in 0..14) {
             bear[num].setOnClickListener {
                 number += 100
                 numberTextView.text = number.toString()
@@ -53,14 +53,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         var bee = listOf( bee1, bee2, bee3, bee4, bee5, bee6, bee7, bee8)
-        for (num in 1..8) {
+        for (num in 0..7) {
             bee[num].setOnClickListener {
 
             }
         }
 
         var honey = listOf( honey1, honey2)
-        for (num in 1..2) {
+        for (num in 0..1) {
             honey[num].setOnClickListener {
 
             }
