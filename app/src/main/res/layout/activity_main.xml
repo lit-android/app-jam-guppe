@@ -256,12 +256,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="60dp"
-        android:text="0:30"
+        android:text="10"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/bee8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="83dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/backgroud_rounded_circle"
+        android:text="start"
+        app:backgroundTint="#D7DC376F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

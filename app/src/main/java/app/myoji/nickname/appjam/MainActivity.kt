@@ -1,20 +1,29 @@
 package app.myoji.nickname.appjam
 
+import android.graphics.Color.rgb
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 
 class MainActivity : AppCompatActivity() {
+
+    var second: Int = 10;
+
+    var score: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var number:Int = 0
-
+        var timerText: TextView = findViewById(R.id.timerText)
         var numberTextView: TextView = findViewById<TextView>(R.id.numberTextView)
         numberTextView.text = "0"
+
+        var startButton: Button = findViewById<Button>(R.id.startButton)
 
         var bear1: ImageButton = findViewById(R.id.bear1)
         var bear2: ImageButton = findViewById(R.id.bear2)
@@ -44,25 +53,54 @@ class MainActivity : AppCompatActivity() {
         var honey1: ImageButton = findViewById(R.id.honey1)
         var honey2: ImageButton = findViewById(R.id.honey2)
 
+        val timer : CountDownTimer = object : CountDownTimer(10000, 1000){
+            override fun onFinish() {
+                startButton.isVisible = true
+                second = 10
+            }
+
+
+            override fun onTick(millisUntilFinished: Long) {
+                second -= 1
+                timerText.setTextColor(rgb(255,255,255))
+                timerText.text = second.toString()
+            }
+        }
+
+        startButton.setOnClickListener {
+            startButton.isVisible = false
+            score = 0
+            numberTextView.text = score.toString()
+            timer.start()
+        }
+
         var bear = listOf(bear1, bear2, bear3, bear4, bear5, bear6, bear7, bear8, bear9, bear10, bear11, bear12, bear13, bear14, bear15)
         for (num in 0..14) {
             bear[num].setOnClickListener {
-                number += 100
-                numberTextView.text = number.toString()
+                if (second < 10) {
+                    score += 100
+                    numberTextView.text = score.toString()
+                }
             }
         }
 
         var bee = listOf( bee1, bee2, bee3, bee4, bee5, bee6, bee7, bee8)
         for (num in 0..7) {
             bee[num].setOnClickListener {
-
+                if (second < 10) {
+                    score -= 300
+                    numberTextView.text = score.toString()
+                }
             }
         }
 
         var honey = listOf( honey1, honey2)
         for (num in 0..1) {
             honey[num].setOnClickListener {
-
+                if (second < 10) {
+                    score += 500
+                    numberTextView.text = score.toString()
+                }
             }
         }
 
