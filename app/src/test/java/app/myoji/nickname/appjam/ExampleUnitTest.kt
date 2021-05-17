@@ -1,4 +1,4 @@
-package app.myoji.nickname.appjam
+package app.taniguchi.guppe.appjam
 
 import org.junit.Test
 

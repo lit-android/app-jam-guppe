@@ -1,4 +1,4 @@
-package app.myoji.nickname.appjam
+package app.taniguchi.guppe.appjam
 
 import android.graphics.Color.rgb
 import android.os.Bundle
