@@ -8,7 +8,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "app.myoji.nickname.appjam"
+        applicationId "app.taniguchi.guppe.appjam"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

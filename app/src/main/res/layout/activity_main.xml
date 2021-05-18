@@ -4,15 +4,276 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#85098A0E"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/numberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="32dp"
+        android:text="0"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/honey1"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/honey2"
+        app:layout_constraintTop_toTopOf="@+id/honey2"
+        app:srcCompat="@drawable/honey" />
+
+    <ImageButton
+        android:id="@+id/bee2"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear2"
+        app:layout_constraintTop_toTopOf="@+id/bear2"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bear1"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear2"
+        app:layout_constraintTop_toTopOf="@+id/bear2"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear2"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/numberTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bee4"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear4"
+        app:layout_constraintTop_toTopOf="@+id/bear4"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bee8"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/honey2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bear4"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bear2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear5"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear4"
+        app:layout_constraintTop_toTopOf="@+id/bear4"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear8"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/honey2"
+        app:layout_constraintTop_toTopOf="@+id/honey2"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/honey2"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bee5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/honey" />
+
+    <ImageButton
+        android:id="@+id/bee5"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bear4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bee6"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear10"
+        app:layout_constraintTop_toTopOf="@+id/bear10"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bear11"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear8"
+        app:layout_constraintTop_toTopOf="@+id/bear8"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear12"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear13"
+        app:layout_constraintTop_toTopOf="@+id/bear13"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear15"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear14"
+        app:layout_constraintTop_toTopOf="@+id/bear14"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear7"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee7"
+        app:layout_constraintTop_toTopOf="@+id/bee7"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bee7"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee5"
+        app:layout_constraintTop_toBottomOf="@+id/honey2"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bear13"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee8"
+        app:layout_constraintTop_toTopOf="@+id/bee8"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bee1"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bee4"
+        app:layout_constraintTop_toTopOf="@+id/bee4"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bear14"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bee8"
+        app:layout_constraintTop_toTopOf="@+id/bee8"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear6"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bear5"
+        app:layout_constraintTop_toTopOf="@+id/bear5"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bee3"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bee2"
+        app:layout_constraintTop_toTopOf="@+id/bee2"
+        app:srcCompat="@drawable/bee" />
+
+    <ImageButton
+        android:id="@+id/bear9"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/honey1"
+        app:layout_constraintTop_toTopOf="@+id/honey1"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear10"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/bee5"
+        app:layout_constraintTop_toTopOf="@+id/bee5"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/bear3"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/bear1"
+        app:layout_constraintTop_toTopOf="@+id/bear1"
+        app:srcCompat="@drawable/bear" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
+        android:text="10"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/bee8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="83dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/backgroud_rounded_circle"
+        android:text="start"
+        app:backgroundTint="#D7DC376F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
